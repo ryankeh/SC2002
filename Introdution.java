@@ -59,4 +59,20 @@ public class Main {
 		//Hello World!!
 		//trims white space before message
 	}	
+	
+	public static void escapeCharacters(String[] args) {
+		String message = "Hello \"World\"";
+		//use "\" to include double quotes within string
+		// backslash is the escape character
+		System.out.println(message);
+		
+		String message2 = "cc:\\Windows\\...";
+		//use "\" to include backslash within string
+		System.out.println(message2);
+		
+		String message3 = "hello \n \t world";
+		//use "\n" for new line and "\t" for tab
+		System.out.println(message3);
+		
+	}	
 }
