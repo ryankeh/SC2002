@@ -19,6 +19,6 @@ public class Main {
 		Date now = new Date();
 		//when dealing with reference types always have to allocate memory
 		System.out.println(now);
-		//sout -> tab
+		//Sout -> tab -> enter
 	}
 }
