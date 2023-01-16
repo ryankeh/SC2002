@@ -105,8 +105,18 @@ public class Main {
 		//[[1, 2, 3], [4, 5, 6]]
 	}
 	
-	public static void main(String[] args) {
+	public static void constant(String[] args) {
 		final float PI=3.14F;
 		//final compiles the value as a constant, cannot be edited ltr
 	}
+	
+	public static void arithmetic(String[] args) {
+		int result = 10/3;
+		System.out.println(result);
+		//3
+		double result2 = (double)10/(double)3;
+		System.out.println(result2);
+		//3.33333
+	}
+
 }
