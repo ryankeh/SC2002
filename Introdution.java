@@ -1,5 +1,7 @@
 package com.pack;
 
+import java.util.Date;
+
 public class Main {
 	public static void main(String[] args) {
 		byte age = 30;
@@ -10,5 +12,13 @@ public class Main {
 		//for strings use double quotation marks
 		boolean isEligbible = false;
 		System.out.println(age);
+	}
+	
+	public static void printDateTime(String[] args) {
+		//import java.util.Date;
+		Date now = new Date();
+		//when dealing with reference types always have to allocate memory
+		System.out.println(now);
+		//sout -> tab
 	}
 }
