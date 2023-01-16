@@ -30,4 +30,33 @@ public class Main {
 		System.out.println(point2);
 	}
 	
+	public static void string(String[] args) {
+		//String message = new String("Hello World");
+		String message = "Hello World"+"!!";
+		System.out.println(message);
+		//Hello World!!
+		System.out.println(message.endsWith("!!"));
+		//true
+		System.out.println(message.startsWith("!!"));
+		//false
+		System.out.println(message.length());
+		//13
+		System.out.println(message.indexOf("o"));
+		//4
+		System.out.println(message.indexOf("z"));
+		//-1
+		System.out.println(message.replace("!","?"));
+		//Hello World??
+		System.out.println(message);
+		//Hello World!!
+		//strings are immutable, any methods that modify a string will always return a new string object
+		System.out.println(message.toLowerCase());
+		//hello world!!
+		System.out.println(message.toUpperCase());
+		//HELLO WORLD!!
+		String message2 = "  Hello World"+"!!";
+		System.out.println(message2.trim());
+		//Hello World!!
+		//trims white space before message
+	}	
 }
