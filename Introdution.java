@@ -92,4 +92,16 @@ public class Main {
 		System.out.println(Arrays.toString(numbers2));
 		//[1, 2, 3, 4, 5]
 	}
+	
+	public static void multiDimensionalArray(String[] args) {
+		int[][] numbers = new int[2][3];
+		numbers[0][0]=1;
+		numbers[0][1]=2;
+		System.out.println(Arrays.deepToString(numbers));
+		//[[1, 2, 0], [0, 0, 0]]
+		
+		int[][] numbers2 = {{1,2,3},{4,5,6}};
+		System.out.println(Arrays.deepToString(numbers2));
+		//[[1, 2, 3], [4, 5, 6]]
+	}
 }
