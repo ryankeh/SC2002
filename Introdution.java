@@ -119,5 +119,16 @@ public class Main {
 		//3.33333
 		//order of operations: () -> */ -> +-
 	}
+	
+	public static void casting(String[] args) {
+		//byte>short>int>long>float>double
+		String x ="1";
+		int y = Integer.parseInt(x)+2;
+		System.out.println(y);
+		
+		String x2 ="1.1";
+		double y2 = Double.parseDouble(x2)+2;
+		System.out.println(y2);
+	}
 
 }
