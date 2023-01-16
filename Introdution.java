@@ -104,4 +104,9 @@ public class Main {
 		System.out.println(Arrays.deepToString(numbers2));
 		//[[1, 2, 3], [4, 5, 6]]
 	}
+	
+	public static void main(String[] args) {
+		final float PI=3.14F;
+		//final compiles the value as a constant, cannot be edited ltr
+	}
 }
