@@ -117,6 +117,7 @@ public class Main {
 		double result2 = (double)10/(double)3;
 		System.out.println(result2);
 		//3.33333
+		//order of operations: () -> */ -> +-
 	}
 
 }
