@@ -23,6 +23,17 @@ public class Main {
 		} else {
 			System.out.println("Cold day");
 		}
+		//It's a hot day
+		//Drink water
+		
+		int income=120_000;
+		boolean hasHighIncome = (income > 100_000);
+		System.out.println(hasHighIncome);
+		//true
+		
+		String className = income > 100_000 ? "First":"Economy";
+		System.out.println(className);
+		//First
 	}
   
   
