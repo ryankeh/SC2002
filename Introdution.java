@@ -170,7 +170,20 @@ public class Main {
 		String result3 = NumberFormat.getPercentInstance().format(0.1);
 		System.out.println(result3);
 		// 10%
-
+	}
+	
+	public static void readingInput(String[] args) {
+		//import java.util.Scanner;
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Age: ");
+		//println automatically adds a newline, use print to have input in the same line
+		byte age = scanner.nextByte();
+		System.out.println("You are " + age);
+		
+		System.out.print("Name: ");
+		String name = scanner.nextLine().trim();
+		//nextLine takes the whole line of user input regardless of spaces
+		System.out.println("You are " + name);
 	}
 
 }
