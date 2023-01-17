@@ -154,5 +154,23 @@ public class Main {
 		System.out.println(result7);
 		// gives random integer from 0 to 100
 	}
+	
+	public static void formatNumber(String[] args) {
+		// import java.text.NumberFormat;
+		NumberFormat currency = NumberFormat.getCurrencyInstance();
+		String result = currency.format(1234567.891);
+		System.out.println(result);
+		// $1,234,567.89
+		
+		NumberFormat percent = NumberFormat.getPercentInstance();
+		String result2 = percent.format(1234567.891);
+		System.out.println(result2);
+		// 123,456,789%
+		
+		String result3 = NumberFormat.getPercentInstance().format(0.1);
+		System.out.println(result3);
+		// 10%
+
+	}
 
 }
