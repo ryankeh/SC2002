@@ -90,3 +90,41 @@ public class ShapesApp {
         circ.print();
     }
 }
+
+//overriding example with Disc Subclass
+public class Disc extends Circle {
+    private double thickness ;
+    public Disc() { super() ; thickness = 0 ; }
+    public Disc( double xCoor , double yCoor , double rad , double t ) {
+        super( xCoor , yCoor , rad ) ;
+        thickness = t ;
+    }
+    public double getThickness() { return thickness ; }
+    public double findArea() {
+        return 2 * super.findArea() + 2 * Math.PI * getRadius() * thickness ;
+    }
+    public double findVolume() {
+        return super.findArea() * thickness ;
+    }
+    public void print() {
+        System.out.println( "Disc print() method: " );
+        super.print();
+        System.out.println( "Radius = " + getRadius() );
+        System.out.println( "Thickness = " + thickness );
+        System.out.println( "Area = " + findArea() );
+        System.out.println( "Volume = " + findVolume() );
+    }
+}
+
+//testing disc app
+public class DiscApp {
+    public static void main( String[] args ) {
+        Circle circ = new Circle( 1 , 5 , 10 );
+        Disc disc = new Disc( 10 , 20 , 5 , 10 );
+        circ.print() ;
+        disc.print() ;
+        System.out.println( "Volume = " + disc.findVolume() );
+        System.out.println( "XPos = " + circ.getXPos() + " YPos = " + circ.getYPos() );
+        System.out.println( "XPos = " + disc.getXPos() + " YPos = " + disc.getYPos() );
+    }
+}
